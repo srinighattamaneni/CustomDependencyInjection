@@ -1,0 +1,5 @@
+2020-08-02 20:05:36 INFO  ObjectFactory:16 - Bean class com.framework.di.beans.T20Cricket exists in the Object pool
+2020-08-02 20:40:29 INFO  ObjectFactory:36 - Bean class com.framework.di.beans.TestCricketDao exists in the Object pool 
+2020-08-02 20:40:29 INFO  ObjectFactory:36 - Bean class com.framework.di.beans.T20Cricket exists in the Object pool 
+2020-08-02 20:40:29 INFO  ObjectFactory:36 - Bean class com.framework.di.beans.T20Cricket exists in the Object pool 
+2020-08-02 20:40:29 INFO  ObjectFactory:36 - Bean class com.framework.di.beans.OdiCricket exists in the Object pool 

@@ -1,17 +1,39 @@
 package com.framework.di.factory;
-import lombok.extern.log4j.Log4j;
 
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
-@Log4j
+
+/*
+ * Copyright (c) 2020.
+ * @author Srinivas
+ * @version 1.0
+ * @since 02-Aug-20
+ *
+ * <pre>
+ * Revision History:
+ * Version      Date                     Author            Changes
+ * -----------------------------------------------------------------------------
+ * 1.0         02-Aug-20                   Srinivas  		   Initial coding
+ *
+ * </pre>
+ */
 public class ObjectFactory {
 
 
+    private static org.apache.log4j.Logger log =  org.apache.log4j.Logger.getLogger(ObjectFactory.class);
     public static Map<Class,Object> objectPool = new HashMap<Class,Object>();
+
+    /**
+     *
+     * @param beanName
+     * @param <T>
+     * @return its returns required bean of type T
+     */
     public static <T> T getObject(Class<T> beanName){
 
         if(objectPool.containsKey(beanName)){
+            log.info(String.format("Bean %s exists in the Object pool ", beanName));
             return (T)objectPool.get(beanName);
         }
         T mainObj = null;

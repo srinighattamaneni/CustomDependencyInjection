@@ -2,16 +2,23 @@ package com.framework.di.beans;
 
 import com.framework.di.factory.AutoInject;
 import com.framework.di.factory.Scope;
-
+/*
+ * Copyright (c) 2020.
+ * @author Srinivas
+ * @version 1.0
+ * @since 02-Aug-20
+ *
+ * <pre>
+ * Revision History:
+ * Version      Date                     Author            Changes
+ * -----------------------------------------------------------------------------
+ * 1.0         02-Aug-20                   Srinivas  		   Initial coding
+ *
+ * </pre>
+ */
 public class TestCricket {
 
-    public TestCricketService getTestCricketService() {
-        return testCricketService;
-    }
 
-    public void setTestCricketService(TestCricketService testCricketService) {
-        this.testCricketService = testCricketService;
-    }
 
     @AutoInject(type= Scope.PROTOTYPE)
     private TestCricketService testCricketService;
@@ -22,12 +29,19 @@ public class TestCricket {
 
         return testCricketService.getRules();
 
-        //return "Test cricket is played for 5 days, each days got 90 overs,no over limit per each bowler ";
     }
 
     public String getBallColor(){
 
 
         return testCricketUtility.getBallColor();
+    }
+
+    public TestCricketUtility getTestCricketUtility() {
+        return testCricketUtility;
+    }
+
+    public TestCricketService getTestCricketService() {
+        return testCricketService;
     }
 }

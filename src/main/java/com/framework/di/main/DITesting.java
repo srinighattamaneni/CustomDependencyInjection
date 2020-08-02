@@ -4,7 +4,20 @@ import com.framework.di.beans.OdiCricket;
 import com.framework.di.beans.T20Cricket;
 import com.framework.di.beans.TestCricket;
 import com.framework.di.factory.ObjectFactory;
-
+/*
+ * Copyright (c) 2020.
+ * @author Srinivas
+ * @version 1.0
+ * @since 02-Aug-20
+ *
+ * <pre>
+ * Revision History:
+ * Version      Date                     Author            Changes
+ * -----------------------------------------------------------------------------
+ * 1.0         02-Aug-20                   Srinivas  		   Initial coding
+ *
+ * </pre>
+ */
 public class DITesting {
     public static void main(String[] args) {
 
@@ -25,4 +38,6 @@ public class DITesting {
        // System.out.printf("Cricket Rules------>"+t20Cricket.getRules());
 
     }
+
+
 }
