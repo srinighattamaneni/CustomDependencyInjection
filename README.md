@@ -14,6 +14,8 @@ IDE used : Intellij
 
 4. For the purpose of demonstration i have come up with providing rules of three formats in cricket
 
+5. Created "DITestingTest" test class to test Dependency Injection , Singaleton and Prototype 
+
 
 
 
